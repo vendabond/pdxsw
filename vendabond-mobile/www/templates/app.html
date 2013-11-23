@@ -12,8 +12,8 @@
       <content has-header="true" has-tabs="true">
           <div class="list card" ng-repeat="pet in pets">
 
-  <a href="#/menu/{{pet.id}}" ng-class="{{pet.available}}" class="item item-icon-left">
-    <i class="icon ion-{{pet.icon}}"></i>
+  <a href="#/menu/{{pet.id}}" ng-class="{disabled: !pet.available, special: pet.special}" class="item item-thumbnail-left">
+    <img src="../img/{{pet.image}}"/>
     <h3>{{pet.title}}</h3>
       {{pet.description}}
   </a>
@@ -22,11 +22,15 @@
     </tab>
 
     <!-- Adoption tab -->
-    <tab title="Location" icon="icon ion-heart">
+    <tab title="Location" icon="icon ion-earth">
       <content has-header="true" has-tabs="true">
         <div class="padding">
-          <h2>Find Us</h2>
-        </div>
+            <div class="item item-body">
+                <h2>Find Us</h2>
+                <p></p>
+    <img class="full-image" src="../img/map.png">
+  </div>
+            </div>
         
       </content>
     </tab>

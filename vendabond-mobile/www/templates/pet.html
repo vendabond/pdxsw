@@ -1,14 +1,24 @@
 <nav-page title="pet.title">
+    
   <content has-header="true">
           <div class="card">
   <div class="item item-text-wrap">
-                <h2>{{pet.title}}</h2>
-          
-      <img src="http://placehold.it/350x150" />
+          <div class="item item-image">
+      <img src="../img/{{pet.image}}" />
+  </div>
           <p>{{pet.description}}</p>
-          <button class="button button-balanced">
-  Order ({{pet.price}})
-</button>
+          <a ng-show="{{pet.available}}" class="button button-block button-balanced">
+  Add to order ({{pet.price}})
+</a>
+<a class="button button-block button-energized">
+  Add to Favorites
+</a>
+<a class="button button-block button-positive">
+  <i class="icon ion-social-twitter"></i> Share
+</a>
+       <a class="button button-block button-stable" href="#/menu/{{pet.id+1}}">
+    Next Item
+  </a>
   </div>
 </div>
   </content>

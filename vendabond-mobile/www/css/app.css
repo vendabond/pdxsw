@@ -10,3 +10,13 @@
   left: 50%;
   margin: -64px 0px 0px -64px;
 }
+
+
+.disabled {
+    background-color: #666;
+}
+
+.special {
+    background-color:
+        #ddd;
+}
