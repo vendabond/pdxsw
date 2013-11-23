@@ -1,0 +1,29 @@
+/* Thanks for using our font! We hope you enjoy using it as much as we enjoyed making it! */
+
+
+@font-face {
+    font-family: 'narwhalbold';
+    src: url('narwhal_bold-webfont.eot');
+    src: url('narwhal_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('narwhal_bold-webfont.woff') format('woff'),
+         url('narwhal_bold-webfont.ttf') format('truetype'),
+         url('narwhal_bold-webfont.svg#narwhalbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'narwhalregular';
+    src: url('narwhal-webfont.eot');
+    src: url('narwhal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('narwhal-webfont.woff') format('woff'),
+         url('narwhal-webfont.ttf') format('truetype'),
+         url('narwhal-webfont.svg#narwhalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
