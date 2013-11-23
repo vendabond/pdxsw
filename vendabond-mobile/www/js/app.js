@@ -15,7 +15,7 @@ angular.module('starter', ['ionic', 'ngRoute', 'ngAnimate', 'starter.services', 
     controller: 'AppCtrl'
   });
 
-  $routeProvider.when('/pet/:petId', {
+  $routeProvider.when('/menu/:petId', {
     templateUrl: 'templates/pet.html',
     controller: 'PetCtrl'
   });
