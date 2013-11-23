@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'ngRoute', 'ngAnimate', 'starter.services', 'starter.controllers'])
+angular.module('starter', ['ionic', 'ngRoute', 'ngAnimate', 'starter.services', 'starter.controllers', "leaflet-directive"])
 
 .config(function ($compileProvider){
   // Needed for routing to work

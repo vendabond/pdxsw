@@ -1,6 +1,24 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope) {
+    angular.extend($scope, {
+        osloCenter: {
+            lat: 59.91,
+            lng: 10.75,
+            zoom: 12
+        },
+        markers: {
+            osloMarker: {
+                lat: 59.91,
+                lng: 10.75,
+                focus: true,
+                draggable: false
+            }
+        },
+        defaults: {
+            scrollWheelZoom: false
+        }
+    });
   // Main app controller, empty for the example
 })
 
