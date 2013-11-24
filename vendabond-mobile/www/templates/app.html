@@ -8,40 +8,40 @@
   <tabs tabs-style="tabs-icon-top" tabs-type="tabs-assertive" animate-nav="false">
 
     <!-- Pets tab -->
-    <tab title="Menu" icon="icon ion-home" ng-controller="PetsTabCtrl">
+    <tab title="Carts" icon="icon ion-home" ng-controller="CartsTabCtrl">
       <content has-header="true" has-tabs="true">
-          <div class="list card" ng-repeat="pet in pets">
+          <div class="list card" ng-repeat="cart in carts">
 
-  <a href="#/menu/{{pet.id}}" ng-class="{disabled: !pet.available, special: pet.special}" class="item item-thumbnail-left">
-    <img src="../img/{{pet.image}}"/>
-    <h3>{{pet.title}}</h3>
-      <p>{{pet.description}}</p>
-      <p></p>
+  <a href="#/cart/{{cart.id}}" class="item item-thumbnail-left">
+    <img src="/MobileDemo/img/{{cart.image}}"/>
+    <h3>{{cart.name}}<span class="badge badge-balanced" ng-show="{{cart.open}}">Open</span><span class="badge badge-dark" ng-hide="{{cart.open}}">Closed</span></h3>
+      <p>{{cart.description}}</p>
+      <p>
+          Hours: {{cart.opens}} until {{cart.closes}}</p>
   </a>
 </div>
       </content>
     </tab>
 
     <!-- Adoption tab -->
-    <tab title="Location" icon="icon ion-earth">
+    <tab title="Favorites" icon="icon ion-star" ng-controller="FavTabCtrl">
       <content has-header="true" has-tabs="true">
         <div class="padding">
             <div class="item item-body">
-                <h2>Find Us</h2>
-                <p><leaflet markers="markers" center="osloCenter" height="480px" width="320px"></leaflet>
- </p>
+                <h2>Favorite Carts</h2>
+<div class="list card" ng-repeat="cart in favorites">
+
+  <a href="#/cart/{{cart.id}}" class="item item-thumbnail-left">
+    <img src="/MobileDemo/img/{{cart.image}}"/>
+    <h3>{{cart.name}}<span class="badge badge-balanced" ng-show="{{cart.open}}">Open</span><span class="badge badge-dark" ng-hide="{{cart.open}}">Closed</span></h3>
+      <p>{{cart.description}}</p>
+      <p>
+          Hours: {{cart.opens}} until {{cart.closes}}</p>
+  </a>
+</div>
             </div>
             </div>
         
-      </content>
-    </tab>
-
-    <!-- Home tab -->
-    <tab title="About" icon="icon ion-search">
-      <content has-header="true" has-tabs="true" padding="true">
-        <h3>About this cart</h3>
-        <p>
-        </p>
       </content>
     </tab>
 

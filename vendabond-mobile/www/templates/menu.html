@@ -1,4 +1,4 @@
-<nav-page id="app-page" ng-controller="AppCtrl">
+<nav-page id="app-page" ng-controller="MenuCtrl">
 
 
   <!--
@@ -13,10 +13,10 @@
           <div class="list card" ng-repeat="pet in pets">
 
   <a href="#/menu/{{pet.id}}" ng-class="{disabled: !pet.available, special: pet.special}" class="item item-thumbnail-left">
-    <img src="../img/{{pet.image}}"/>
+    <img src="/MobileDemo/img/{{pet.image}}"/>
     <h3>{{pet.title}}</h3>
       <p>{{pet.description}}</p>
-      <p></p>
+      <p ng-show="{{!pet.available}}" class="button button-dark">Out of stock for today</p>
   </a>
 </div>
       </content>

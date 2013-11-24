@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope) {
+})
+.controller('MenuCtrl', function($scope) {
     angular.extend($scope, {
         osloCenter: {
             lat: 59.91,
@@ -25,6 +27,28 @@ angular.module('starter.controllers', [])
 // A simple controller that fetches a list of data
 .controller('PetsTabCtrl', function($scope, Pets) {
   $scope.pets = Pets.all();
+
+  $scope.$on('tab.shown', function() {
+    // Might do a load here
+  });
+  $scope.$on('tab.hidden', function() {
+    // Might recycle content here
+  });
+})
+
+.controller('CartsTabCtrl', function($scope, Carts) {
+  $scope.carts = Carts.all();
+
+  $scope.$on('tab.shown', function() {
+    // Might do a load here
+  });
+  $scope.$on('tab.hidden', function() {
+    // Might recycle content here
+  });
+})
+
+.controller('FavTabCtrl', function($scope, Carts) {
+  $scope.carts = Carts.get(1);
 
   $scope.$on('tab.shown', function() {
     // Might do a load here

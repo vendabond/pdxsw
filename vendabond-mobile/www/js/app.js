@@ -14,6 +14,11 @@ angular.module('starter', ['ionic', 'ngRoute', 'ngAnimate', 'starter.services', 
     templateUrl: 'templates/app.html',
     controller: 'AppCtrl'
   });
+    $routeProvider.when('/cart/:cartId', {
+    templateUrl: 'templates/menu.html',
+    controller: 'MenuCtrl'
+  });
+
 
   $routeProvider.when('/menu/:petId', {
     templateUrl: 'templates/pet.html',
