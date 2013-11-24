@@ -5,14 +5,14 @@ angular.module('starter.controllers', [])
 .controller('MenuCtrl', function($scope) {
     angular.extend($scope, {
         osloCenter: {
-            lat: 59.91,
-            lng: 10.75,
-            zoom: 12
+            lat: 45.52066143340206,
+            lng: -122.6917290687561,
+            zoom: 15
         },
         markers: {
             osloMarker: {
-                lat: 59.91,
-                lng: 10.75,
+                lat: 45.52066143340206,
+            lng: -122.6917290687561,
                 focus: true,
                 draggable: false
             }
