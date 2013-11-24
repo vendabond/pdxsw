@@ -2704,8 +2704,8 @@ a.subdued {
     .bar.bar-calm .title {
       color: white; }
   .bar.bar-assertive {
-    background-color: #ef4e3a;
-    border-color: #cc2511;
+    background-color: #8f614a;
+    border-color: #91634d;
     background-image: linear-gradient(0deg, #cc2511, #cc2511 50%, transparent 50%);
     color: white; }
     .bar.bar-assertive .title {
@@ -3052,9 +3052,9 @@ a.subdued {
     border-color: #1aaac3;
     color: white; }
   .tabs.tabs-assertive {
-    background-color: #ef4e3a;
+    background-color: #8f614a;
     background-image: linear-gradient(0deg, #cc2511, #cc2511 50%, transparent 50%);
-    border-color: #cc2511;
+    border-color: #91634d;
     color: white; }
   .tabs.tabs-balanced {
     background-color: #66cc33;
