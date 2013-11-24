@@ -1,6 +1,3 @@
-ionic-angular-cordova-seed
-==========================
+VendaBond
 
-The perfect starting point for an Ionic project.
-
-- [Ionic Tutorials](http://ionicframework.com/tutorials/)
+This is the website of VendaBond.
